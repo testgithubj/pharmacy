@@ -1,0 +1,212 @@
+/*html body{*/
+/*    background: url(./bg-image.jpg);*/
+/*    background-size: cover;*/
+/*    background-position: center center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: fixed;*/
+/*}*/
+.page-wrapper{
+    min-height: 80vh;
+}
+.header-navbar.floating-nav{
+    /*background: #ffffff80 ;*/
+    /*backdrop-filter: blur(15px);*/
+    background: #fff ;
+}
+
+.main-menu.menu-dark .navigation > li ul .open > a,
+.main-menu.menu-dark .navigation > li ul .sidebar-group-active > a {
+    background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7)) !important;
+    box-shadow: 0 0 10px 1px rgb(115 103 240 / 70%) !important;
+    color: #fff !important;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.py-1 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.dropdown-item {
+    padding: 1rem 1rem !important;
+}
+
+.notification-dropdown {
+    width: 310px !important;
+}
+
+
+.notification-box {
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+
+
+
+/* Hide the Google Translate bar */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+/* Hide the Google Translate label */
+.goog-te-gadget {
+    font-size: 0 !important;
+}
+
+/* Hide the Google Translate dropdown arrow */
+.goog-te-combo {
+    display: none !important;
+}
+.goog-te-gadget-simple {
+    width: 100%;
+    border-radius: 7px;
+    padding: 4px 6px !important;
+    border: 1px solid #7367f0 !important;
+}
+div#google_translate_element {
+    margin: 0 20px;
+    max-width: 170px;
+}
+
+.btn-circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 6px;
+}
+html body{
+    color: black;
+}
+.page-wrapper .card {
+    border-top: 4px solid #7367f0 !important;
+    background: #fff;
+    border-radius: 15px;
+}
+.card .card-header{
+    border: 0;
+    background: white;
+    margin: 0px;
+}
+.table > :not(caption) > * > *{
+    padding: 0.72rem 1rem;
+}
+.software-version{
+    padding: 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #10163a;
+}
+.software-version .box{
+    padding: 18px 0px;
+    white-space: normal;
+    text-align: center;
+    background: #050530;
+    border-radius: 16px;
+    margin: 20px 21px;
+    font-size: 15px;
+    height: 80px;
+    color: #c2c2c2;
+}
+.software-version .box span.version {
+    display: inline-block;
+    height: 23px;
+    width: 40px;
+    background: #10163a;
+    color: #c2c2c2;
+    border-radius: 50px;
+}
+.software-version-mini-sidebar{
+    padding: 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #10163a;
+    width: 100%;
+}
+.software-version-mini-sidebar .box{
+    padding: 9px 0px;
+    text-align: center;
+    background: #050530;
+    border-radius: 20px;
+    margin: 8px 21px;
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+}
+
+.menu-collapsed .software-version{
+    display: none;
+}
+.menu-collapsed .software-version-mini-sidebar{
+    display: block;
+}
+.menu-expanded .software-version-mini-sidebar{
+    display: none;
+}
+
+.border-radius-50 {
+    border-radius: 50px;
+}
+
+.statistic .icon-box {
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 13px;
+    color: #fff;
+}
+.statistic .card {
+    height: 120px;
+}
+.col-border-right{
+    border-right: 2px solid #0b62a4;
+}
+.text h4 {
+    color: #191a1a;
+}
+.text h6 {
+    color: #0b62a4;
+}
+
+table.table .edit-button {
+    color: #fff;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    padding: 11px;
+    text-align: center;
+    display: inline-block;
+}
+table.table .delete-button {
+    color: #fff;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    padding: 11px;
+    text-align: center;
+    display: inline-block;
+}
+
+table.table .show-button {
+    color: #fff;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+table.table .gap-1 {
+    gap: .5rem !important;
+}

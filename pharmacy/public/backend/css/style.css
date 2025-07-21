@@ -1,0 +1,234 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+
+@media only screen and (max-width: 600px) {
+    #desktopmenu{
+        display:none;
+    }
+    #mobilemenu{
+        display:block;
+        width: calc( 112vw - (100vw - 100%) - calc(2rem + 0.4rem)) !important;
+        margin-left: calc(0rem - 0.8rem);
+        margin-right: calc(0rem - 0.8rem);
+    }
+    .app-content{
+        padding: calc(0rem - 0rem + 0rem + 0rem) calc(1rem - 0rem) 0 calc(1rem - 0rem) !important;
+    }
+    .header-navbar.floating-nav {
+        width: calc(100vw - (100vw - 100%) - calc(0rem * 0) - 279px);
+        border-radius: 0;
+    } 
+    #mm a {
+        font-size: 18px;
+        padding: 6px 13px;
+        background: #0f00a5;
+        color: white;
+        margin-left: 14px;
+   }
+   #mul {
+    margin-left:5px;
+   }
+}
+
+@media only screen and (min-width: 600px) {
+    #desktopmenu{
+        display:block;
+    }
+    #mobilemenu{
+        display:none;
+    }
+}
+
+
+
+.atlchart{
+    height: 400px;
+}
+
+.line-atl{
+    display: block; 
+    height: 400px;
+}
+.planbtn li {
+    padding: 11px;
+    background: #7367f0;
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+    line-height: 0 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    border-radius: 5px;
+    }
+    .planbtn li span {
+    padding: 10px;
+    display: block;
+    }
+    @media (max-width: 767px){
+    ul.nav.navbar-nav.planbtn {
+    display: none;
+    }
+}
+.navBar{
+    background-color:#10163A;
+}
+.dropDown{
+    width:200px !important;
+}
+.small-box.first{
+    background: #22b0ff38;
+}
+.small-box.first .icon{
+    background: #22b0ff;
+}
+.small-box.second {
+    background: #ff5d8159;
+}
+.small-box.second .icon{
+    background: #fa5a7e;
+}
+.small-box.third {
+    background: #86ff8996
+}
+.small-box.third .icon{
+    background: #38c43b;
+}
+.small-box.fourth {
+    background: #e967ff8c;
+}
+.small-box.fourth .icon{
+    background: #9C27B0;
+}
+.border-r20{
+    border-radius: 20px !important;
+}
+.border-r20 .card-header{
+    border-radius: 20px 20px 0 0px !important;
+}
+.border-r20 .table tr th{
+    background: transparent !important;
+}
+.border-r20 h4.card-title.Titlee {
+    color: #fff;
+}
+
+.small-box-footer {
+    color: #10163a;
+    display: block;
+    padding: 6px 9px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    z-index: 10;
+    font-size: 13px;
+    font-weight: 600;
+}
+a.small-box-footer span {
+    white-space: nowrap;
+    width: 95px;
+    display: inline-flex;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.small-box-footer:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.smalll-box{
+    padding: 10px;
+    position: relative;
+}
+.inner{
+    color: #fff;
+}
+.icon{
+    transition: font-size 2s;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 9px;
+    color: #fff;
+
+}
+.icon i {
+    font-size: 20px;
+}
+.icon:hover{
+    font-size: 2.6rem;
+}
+
+.inner > h3{
+    font-size: 19px;
+    font-weight: 600;
+    color: #10163a;
+}
+.small-box p {
+    font-size: 1rem;
+}
+
+.row.mt-3.statrow {
+    background: #ffffff;
+    padding-top: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.small-box {
+    border-radius: 17px;
+    padding: 3px;
+}
+.planbtnm li {
+            padding: 11px;
+            background: #7367f0;
+            list-style: none;
+            margin-right: 15px;
+            line-height: 0 !important;
+            color: #ffffff !important;
+            font-weight: 600;
+            border-radius: 5px;
+            margin:6px;
+        }
+.planbtnm li a{color: #ffffff !important;}
+.planbtnm li span {
+            padding: 10px;
+            display: block;
+        }
+.plm{display:none;}
+
+.fourboxstat{padding-bottom: 15px;}
+        
+
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    display: none;
+  }
+  .small-box{
+      margin: 20px 0px;
+  }
+  .plm{display:block;}
+}
+.morris-chart text {
+  fill: #5195eb;
+}
+.Titlee {
+  color:#000; font-weight:600;
+}
+
+.admin-notification-dropdown {
+    width: 400px !important;
+}
+.admin-notification-dropdown{
+
+}
