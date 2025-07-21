@@ -1,0 +1,3 @@
+id,shop_id,name,due,address,upazilla_id,district_id,thana_id,division_id,union_id,phone,global,created_at,updated_at
+1,1,supplie,0,bangladesi,1,,5,,,05689559886,0,"2025-01-13 19:52:36","2025-01-15 13:11:50"
+2,1,test,4324,45534,1,,5,,,3432423467,0,"2025-01-21 11:04:34","2025-01-21 11:04:34"
