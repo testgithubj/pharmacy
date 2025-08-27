@@ -1,0 +1,39 @@
+alertmanager:
+  alertmanagerSpec:
+    alertmanagerConfigSelector: 
+      matchLabels:
+        release: prometheus
+grafana:  
+  additionalDataSources:
+    - name: demo-cluster-1
+      type: loki
+      access: proxy
+      url: http://loki-gateway.loki.svc.cluster.local
+      basicAuth: true
+      basicAuthUser: loki
+      secureJsonData:
+        basicAuthPassword: '!ts@Comp1exPasWord'
+        httpHeaderValue1: 'demo-cluster-1'
+      jsonData:
+        httpHeaderName1: 'X-Scope-OrgId'
+      isDefault: false
+      editable: true
+# prometheus:
+#   prometheusSpec:
+#     serviceMonitorNamespaceSelector:
+#     ## Example which selects ServiceMonitors in namespaces with label "prometheus" set to "somelabel"
+#     # serviceMonitorNamespaceSelector:
+#     #   matchLabels:
+#     #     prometheus: somelabel  # default release: prometheus
+
+# helm install prometheus prometheus-community/kube-prometheus-stack \
+# --namespace monitoring \
+# --version 76.4.0 \
+# --create-namespace \
+# -f values_to_use.yaml
+
+# helm upgrade prometheus prometheus-community/kube-prometheus-stack \
+# --namespace monitoring \
+# --version 76.4.0 \
+# --values prometheus_to_use.yaml \
+# --install
