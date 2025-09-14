@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: php/Dockerfile
+    volumes:
+      - ./:/var/www/html
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    depends_on:
+      - php
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "8081:80"   # ব্রাউজার: http://<IP>:8081
+    restart: unless-stopped
