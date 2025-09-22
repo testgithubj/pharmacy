@@ -3,11 +3,11 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main   # main branch এ push হলেই run করবে
+      - main   # শুধু main branch এ push হলেই run হবে
 
 jobs:
   deploy:
-    runs-on: self-hosted   # এখানে self-hosted দিলে আপনার EC2 runner ব্যবহার হবে
+    runs-on: ubuntu-latest   # এখানে self-hosted এর বদলে ubuntu-latest ব্যবহার করো
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -16,7 +16,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.EC2_HOST }}
-          username: ubuntu
+          username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/pharmacy/pharmacy || exit 1
