@@ -7,7 +7,8 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest   # এখানে self-hosted এর বদলে ubuntu-latest ব্যবহার করো
+    runs-on: ubuntu-latest   # self-hosted না, ubuntu-latest যথেষ্ট
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -21,5 +22,5 @@ jobs:
           script: |
             cd ~/pharmacy/pharmacy || exit 1
             git pull
-            docker compose -f docker-compose.prod.yml up -d --build
+            docker compose -f docker-compose.yml up -d --build
             docker compose ps
